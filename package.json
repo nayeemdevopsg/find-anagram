@@ -1,0 +1,23 @@
+{
+  "name": "anagrams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "findanagrams.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayeemfrontdev/find-anagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nayeemfrontdev/find-anagram/issues"
+  },
+  "homepage": "https://github.com/nayeemfrontdev/find-anagram#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}

@@ -1,11 +1,8 @@
 
-
-
-
 //Developed by MD NAYEEM HOSSAIN.
 
 //find anagrams
-function findAnagrams(value1, value2){
+function anagram(value1, value2){
 
 //declaring arrays to store values
 var store1 = [];
@@ -30,7 +27,7 @@ store3 = store1.concat(store2);
 //declaring new array to store common values
 var store5 = [];
 
-//storing duplicate values
+//storing common values
 for( var i = 0; i < store3.length; i++){
     var element = store3[i];
     var index = store5.indexOf(element);
@@ -44,16 +41,12 @@ for( var i = 0; i < store3.length; i++){
 
 //assimilating length of common value array and declared values array.
 if(store5.length == store1.length && store5.length == store2.length){
-    console.log("Both Strings are Anagram");
+    return "Both Strings are Anagram";
 }
 else{
-    console.log("Both Strings are not Anagram");
+    return "Both Strings are not Anagram";
 }
 
 }
 
-
-findAnagrams("beetle", "eetleb");
-findAnagrams("table", "bleta");
-findAnagrams("hi", "ih");
-findAnagrams("cow", "wob");
+module.exports = anagram
